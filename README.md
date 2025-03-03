@@ -40,7 +40,7 @@ Each row should have a different course.
 Note how student 2 has no course enrollment for **Sp_2023**. We've included some fake example data in the ```data``` folder.
 
 ### Generate map
-The first step is to generate a mapping between **CS Courses** and **Stack Overflow** terminology, a mapping between **ACM Topics** and **Stack Overflow** terminology, and then compare the **Stack Overflow** neighborhoods to align **CS Courses** to **ACM Topics**. This will be managed by the script ```align_acm_to_courses.py```. See the call signature for help with parameters.
+The first step is to generate a mapping between **CS Courses** and **Stack Overflow** terminology, a mapping between **ACM Topics** and **Stack Overflow** terminology, and then compare the **Stack Overflow** neighborhoods to align **CS Courses** to **ACM Topics**. This will be managed by the script ```align_acm_to_courses.py```. See the call signature for help with parameters. This script will output a TSV file which will be used by the plotting script.
 
 ### Plot Rainbow Barcodes
 Now that you've generated a map between your course descriptions and the ACM topics, you can read in student enrollment data and plot out the topic coverage over time. This is handled by ```plot_barcodes.py```. See the call signature for help with parameters. 
