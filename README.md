@@ -12,7 +12,7 @@ You will need the following packages to run this code on Windows 10/11, in addit
 
 ## Usage
 ### Data Preparation
-You will need the following files/formats:
+You will need the following files/formats in the ```data``` folder:
 
 *```SO_vectors_200.bin```: gensim KeyedVector model of Stack Overflow text. Retrieve the binary from [here](https://github.com/vefstathiou/SO_word2vec). 
 * ```ACM20{X}_Map.tsv``` \[INCLUDED\]: where {X} is either 13 or 23, depending on which map you want to use.
@@ -37,7 +37,7 @@ Each row should have a different course.
 |  3  |  2.673  |  2.841  |"101,125,201"|  "125,205"  |
 | ... |   ...   |   ...   |     ...     |     ...     |
 
-Note how student 2 has no course enrollment for **Sp_2023**.
+Note how student 2 has no course enrollment for **Sp_2023**. We've included some fake example data in the ```data``` folder.
 
 ### Generate map
 The first step is to generate a mapping between **CS Courses** and **Stack Overflow** terminology, a mapping between **ACM Topics** and **Stack Overflow** terminology, and then compare the **Stack Overflow** neighborhoods to align **CS Courses** to **ACM Topics**. This will be managed by the script ```align_acm_to_courses.py```. See the call signature for help with parameters.
